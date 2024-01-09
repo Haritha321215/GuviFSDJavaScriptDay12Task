@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      label {
+        font-weight: bold;
+      }
+      .checked {
+        color: orange;
+        font-size: 20px;
+      }
+      .unchecked {
+        font-size: 20px;
+      }
+      .form-group.required .control-label:after {
+        content: "*";
+        color: red;
+      }
+      .container{
+        padding: 20px;
+        border: solid gray;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <form class="row g-2">
+        
+        <div class="form-group required">
+          <label class="control-label">Name</label>
+        </div>        
+        <div class="col-sm-4">
+          <input type="text" class="form-control" aria-label="First name" />
+          First
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" aria-label="Last name" />
+          Last
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group required">
+            <label class="control-label">Email</label>
+          </div>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group required">
+            <label class="control-label">Your Experience</label>
+          </div>
+          <!-- To display checked star rating icons -->
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <br />
+          Overall how would you rate you experience with us
+        </div>
+
+        <div class="col-sm-12">
+          <div class="form-group required">
+            <label class="control-label">How satisfied are you with</label>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <td scope="col"></td>
+                <td scope="col">Very Unsatisfied</td>
+                <td scope="col">Satisfied</td>
+                <td scope="col">Neutral</td>
+                <td scope="col">Satisfied</td>
+                <td scope="col">Very Satisfied</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Purchage</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">Service</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">Companey Overall</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group required">
+            <label class="control-label">How satisfied are you with</label>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <td scope="col"></td>
+                <td scope="col">Very Unsatisfied</td>
+                <td scope="col">Satisfied</td>
+                <td scope="col">Neutral</td>
+                <td scope="col">Satisfied</td>
+                <td scope="col">Very Satisfied</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Buy from us again</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">Recommend our product to others</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">Recommend our company to others</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-12">
+          <label for="">Additional comments or suggestions</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="col-sm-1">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <input
+              class="btn btn-secondary btn-lg"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
